@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SmartHouse
 {
-    public class Lighting : SwitchableDevise, IBrightmesss
+    public class Lighting : SwitchableDevise, IBrightness
     {
     }
 }

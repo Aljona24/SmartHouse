@@ -8,9 +8,9 @@
     </TypeIdentifier>
   </Class>
   <Class Name="SmartHouse.ConsoleMenu" Collapsed="true">
-    <Position X="12" Y="0.5" Width="1.5" />
+    <Position X="11.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAACAAAgAAAAAgAAAAAAAAAEAAQAACAAAAAAAAA=</HashCode>
       <FileName>ConsoleMenu.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -64,7 +64,7 @@
     <Position X="9.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Bathroom.cs</FileName>
+      <FileName>Devices\Bathroom.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -95,7 +95,7 @@
   <Class Name="SmartHouse.SelectChannel">
     <Position X="5.5" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAEEAAAAEAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AgAAAAAAAAAAAAABAAAAAAAAEAAAAEAAAAAQAAAAAAA=</HashCode>
       <FileName>Modules\SelectChannel.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />

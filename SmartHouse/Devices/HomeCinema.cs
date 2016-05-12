@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SmartHouse
 {
-    public class HomeCinema : SwitchableDevise, IBrightmesss, IVolume, IBass, ISoundHighs
+    public class HomeCinema : SwitchableDevise, IBrightness, IVolume, IBass, ISoundHighs
     {
     }
 }

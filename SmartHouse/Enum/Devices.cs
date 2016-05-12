@@ -5,7 +5,12 @@ using System.Text;
 
 namespace SmartHouse
 {
-    public class Conditioner : ITemperature
+    enum Devices
     {
+        ClimateControl,
+        HomeCinema,
+        Lighting,
+        MusicCenter,
+        Buthroom
     }
 }

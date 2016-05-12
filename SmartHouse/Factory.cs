@@ -7,7 +7,7 @@ namespace SmartHouse
 {
     public class Factory
     {
-        List<SwitchableDevise> allDeviseDateBase = new List<SwitchableDevise>();
-        allDeviseDateBase.
+        List<SwitchableDevise> list = new List<SwitchableDevise>();
+        
     }
 }

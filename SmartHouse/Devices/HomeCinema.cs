@@ -7,5 +7,6 @@ namespace SmartHouse
 {
     public class HomeCinema : SwitchableDevise, IBrightness, IVolume, IBass, ISoundHighs
     {
+        
     }
 }

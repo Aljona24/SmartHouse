@@ -66,16 +66,15 @@ namespace SmartHouse
                 Console.WriteLine("e - в предыдущее меню");
                 switch (Console.ReadLine().ToString().ToLower())
                 {
-                    case "del":
-                        Del();
-                        break;
-                    case "add":
-                        Add();
-                        break;
-                    case "edit":
-                        ();
-                        break;
-                        break;
+                    //case "del":
+                    //    Del();
+                    //    break;
+                    //case "add":
+                    //    Add();
+                    //    break;
+                    //case "edit":
+                    //    ();
+                    //    break;
                     case "e":
                         Show();
                         break;

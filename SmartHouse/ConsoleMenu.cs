@@ -16,13 +16,15 @@ namespace SmartHouse
                 Console.Clear();
                 Console.WriteLine("Добро пожаловать в Умный Дом");
                 Console.WriteLine();
-                Console.WriteLine("Выберите для управление нужный девайс:");
 
-                Console.WriteLine("CC - ClimateControl");
+                Console.WriteLine("Ваши девайсы:");
+
+
+                Console.WriteLine("Выберите для управление нужный девайс:");
+                
                 Console.WriteLine("HC - HomeCinema");
                 Console.WriteLine("L - Lighting");
                 Console.WriteLine("MC - MusicCenter");
-                Console.WriteLine("B - Bathrom");
 
                 Console.WriteLine("e - выйти");
                 Console.WriteLine("");

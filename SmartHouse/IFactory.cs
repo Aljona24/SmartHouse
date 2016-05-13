@@ -7,5 +7,8 @@ namespace SmartHouse
 {
     public interface IFactory
     {
+        SwitchableDevise CreateHomeCinema();
+        SwitchableDevise CreateLighting();
+        SwitchableDevise CreateMusicCenter();
     }
 }

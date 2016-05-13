@@ -29,17 +29,14 @@ namespace SmartHouse
         {
             return s.Decrease();
         }
-
         public int Next(ISwitch sw)
         {
             return sw.Next();
         }
-
         public int Prev(ISwitch sw)
         {
             return sw.Prev();
         }
-
         public int Go(ISwitch sw, int whereToMove)
         {
             return sw.Go(whereToMove);

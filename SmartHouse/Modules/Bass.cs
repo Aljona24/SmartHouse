@@ -8,6 +8,9 @@ namespace SmartHouse
     public class Bass : IScale
     {
         int level;
+        //int min;
+        //int max;
+
         public int Level
         {
             get { return level; }

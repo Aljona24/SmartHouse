@@ -13,7 +13,7 @@ namespace SmartHouse
             get { return level; }
             set
             {
-                if (10 >= value && value >= 0)
+                if (100 >= value && value >= 0)
                 {
                     level = value;
                 }

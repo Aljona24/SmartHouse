@@ -10,13 +10,11 @@ namespace SmartHouse
     {
         static void Main(string[] args)
         {
-            //ConsoleMenu.Show();
-            Bass b = new Bass(10);
-            Brightness bright = new Brightness(20);
-            SelectChannel s = new SelectChannel();
-            SoundHighs sh = new SoundHighs(12);
-            Volume v = new Volume(10);
-            SelectChannel sc = new SelectChannel();
+            ConsoleMenu.Show();
+            
+
+
+
         }
     }
 }

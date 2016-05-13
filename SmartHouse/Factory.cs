@@ -5,9 +5,13 @@ using System.Text;
 
 namespace SmartHouse
 {
-    public class Factory
+    public class Factory : IFactory
     {
-        List<SwitchableDevise> list = new List<SwitchableDevise>();
-        
+        public Factory()
+        {
+
+        }
+
     }
+
 }

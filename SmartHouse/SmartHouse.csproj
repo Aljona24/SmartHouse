@@ -59,23 +59,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enum\Devices.cs" />
+    <Compile Include="IFactory.cs" />
+    <Compile Include="Interface2level\IScale.cs" />
+    <Compile Include="Interface2level\ISwitch.cs" />
     <Compile Include="Modules\Bass.cs" />
-    <Compile Include="Devices\Bathroom.cs" />
     <Compile Include="Modules\Brightness.cs" />
-    <Compile Include="Devices\ClimateControl.cs" />
     <Compile Include="ConsoleMenu.cs" />
     <Compile Include="Factory.cs" />
     <Compile Include="Devices\HomeCinema.cs" />
     <Compile Include="Interface1level\IBass.cs" />
     <Compile Include="Interface1level\IBrightness.cs" />
-    <Compile Include="Interface1level\ILevel.cs" />
     <Compile Include="Interface1level\IVolume.cs" />
     <Compile Include="Interface1level\ISoundHighs.cs" />
-    <Compile Include="Interface1level\ITemperature.cs" />
-    <Compile Include="Interface1level\IWetness.cs" />
-    <Compile Include="Interface2level\IScaleModule.cs" />
-    <Compile Include="Interface2level\ISwitchModule.cs" />
-    <Compile Include="Modules\Level.cs" />
     <Compile Include="Devices\Lighting.cs" />
     <Compile Include="Devices\MusicCenter.cs" />
     <Compile Include="Program.cs" />
@@ -84,9 +79,7 @@
     <Compile Include="Modules\SelectChannel.cs" />
     <Compile Include="Modules\SoundHighs.cs" />
     <Compile Include="SwitchableDevise.cs" />
-    <Compile Include="Modules\Temperature.cs" />
     <Compile Include="Modules\Volume.cs" />
-    <Compile Include="Modules\Wetness.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -5,9 +5,9 @@ using System.Text;
 
 namespace SmartHouse
 {
-    public interface IWetness
+    public interface IScale
     {
-        void Increase();
-        void Decrease();
+        int Increase();
+        int Decrease();
     }
 }

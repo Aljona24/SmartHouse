@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SmartHouse
 {
-    public class Volume : IScaleModule
+    public class Volume //: IScale
     {
     }
 }

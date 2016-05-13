@@ -5,9 +5,7 @@ using System.Text;
 
 namespace SmartHouse
 {
-    public interface ITemperature
+    public interface IFactory
     {
-        void Increase();
-        void Decrease();
     }
 }

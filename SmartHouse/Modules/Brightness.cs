@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SmartHouse
 {
-    public class Brightness : IScaleModule
+    public class Brightness //: IScale
     {
     }
 }

@@ -5,9 +5,10 @@ using System.Text;
 
 namespace SmartHouse
 {
-    public interface ILevel
+    public interface ISwitch
     {
-        void Increase();
-        void Decrease();
+        int Next();
+        int Prev();
+        int Go(int whereToMove);
     }
 }

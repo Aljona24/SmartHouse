@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SmartHouse
 {
-    public class MusicCenter : SwitchableDevise, IBass, IVolume, ISoundHighs, SelectChannel
+    public class MusicCenter : SwitchableDevise//, IBass, IVolume, ISoundHighs, SelectChannel, ISelectChannel
     {
     }
 }

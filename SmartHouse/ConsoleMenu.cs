@@ -7,8 +7,10 @@ namespace SmartHouse
 {
     public static class ConsoleMenu
     {
+
         public static void Show()
-        {            
+        {
+            
             while (true)
             {
                 Console.Clear();

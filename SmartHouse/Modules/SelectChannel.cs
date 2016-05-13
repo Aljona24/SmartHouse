@@ -5,18 +5,18 @@ using System.Text;
 
 namespace SmartHouse
 {
-    public class SelectChannel : ISwitchModule
+    public class SelectChannel : ISwitch
     {
         public int CurrentChannel { get; set; }
-        Dictionary<int, string> channels = new Dictionary<int, string>
+        Dictionary<int, string> channelsDb = new Dictionary<int, string>
         {
             {1, "1+1"}, {2, "Интер"}, {3, "СТБ"}, {4, "Украина"}, {5, "ICTV"}, {6, "Новый канал"},
         };
         public int Next()
         {
-            if (CurrentChannel == channels.Keys.Max())
+            if (CurrentChannel == channelsDb.Keys.Max())
             {
-                CurrentChannel = channels.Keys.Min();
+                CurrentChannel = channelsDb.Keys.Min();
             }
             else
             {
@@ -26,9 +26,9 @@ namespace SmartHouse
         }
         public int Prev()
         {
-            if (CurrentChannel == channels.Keys.Min())
+            if (CurrentChannel == channelsDb.Keys.Min())
             {
-                CurrentChannel = channels.Keys.Max();
+                CurrentChannel = channelsDb.Keys.Max();
             }
             else
             {

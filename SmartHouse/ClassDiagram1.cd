@@ -18,7 +18,7 @@
   <Class Name="SmartHouse.Lighting" Collapsed="true">
     <Position X="4.5" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAIAAAAIAgAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <HashCode>AAAAEAAAAAABAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Devices\Lighting.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -26,9 +26,10 @@
   <Class Name="SmartHouse.MusicCenter" Collapsed="true">
     <Position X="6.75" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AgEAEAAAAAABAIAAAIAAAAAAEAAAAEAAAAIAAAAAAAA=</HashCode>
       <FileName>Devices\MusicCenter.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="SmartHouse.Factory" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="9.25" Y="1.5" Width="1.5" />
@@ -49,9 +50,10 @@
   <Class Name="SmartHouse.Brightness" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="5.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAEAAAAAABAAAAAAAAAAAAAAEAAAABAAAAAAAAAAA=</HashCode>
       <FileName>Modules\Brightness.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="SmartHouse.SelectChannel" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="7.5" Y="4.75" Width="1.5" />
@@ -64,16 +66,18 @@
   <Class Name="SmartHouse.SoundHighs" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="2.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAEAAAAAABAAAAAAAAAAAAAAEAAAABAAAAAAAAAAA=</HashCode>
       <FileName>Modules\SoundHighs.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="SmartHouse.Volume" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="4" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAEAAAAAABAAAAAAAAAAAAAAEAAAABAAAAAAAAAAA=</HashCode>
       <FileName>Modules\Volume.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="SmartHouse.Program" Collapsed="true">
     <Position X="11" Y="1.5" Width="1.5" />

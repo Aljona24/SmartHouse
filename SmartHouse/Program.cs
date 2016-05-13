@@ -12,10 +12,10 @@ namespace SmartHouse
         {
             //ConsoleMenu.Show();
             Bass b = new Bass(10);
-            Brightness bright = new Brightness();
+            Brightness bright = new Brightness(20);
             SelectChannel s = new SelectChannel();
-            SoundHighs sh = new SoundHighs();
-            Volume v = new Volume();
+            SoundHighs sh = new SoundHighs(12);
+            Volume v = new Volume(10);
             SelectChannel sc = new SelectChannel();
         }
     }

@@ -7,8 +7,8 @@ namespace SmartHouse
 {
     public interface IBass
     {
-        int Increase(IScale s);
-        int Decrease(IScale s);
+        int Increase();
+        int Decrease();
 
     }
 }

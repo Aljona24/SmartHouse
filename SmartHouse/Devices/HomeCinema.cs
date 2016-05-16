@@ -7,39 +7,39 @@ namespace SmartHouse
 {
     public class HomeCinema : SwitchableDevise, IBrightness, IVolume, IBass, ISoundHighs, ISelectChannel
     {
-        public IScale Bass { get; set; }
-        public IScale Brightness { get; set; }
-        public IScale SoundHighs { get; set; }
-        public IScale Volume { get; set; }
+        public Scale Bass { get; set; }
+        public Scale Brightness { get; set; }
+        public Scale SoundHighs { get; set; }
+        public Scale Volume { get; set; }
         public ISwitch Switch { get; set; }
        
-        public HomeCinema(IScale Bass, IScale Brightness, IScale SoundHighs, IScale Volume, ISwitch Switch)
+        public HomeCinema(Scale Bass, Scale Brightness, Scale SoundHighs, Scale Volume, ISwitch Switch)
         {
             this.Bass = Bass;
             this.Brightness = Brightness;
             this.SoundHighs = SoundHighs;
             this.Volume = Volume;
             this.Switch = Switch;
-        }        
-        public int Increase(IScale s)
+        }     
+        public int Next()
         {
-            return s.Increase();
+            return Switch.Next();
         }
-        public int Decrease(IScale s)
+        public int Prev()
         {
-            return s.Decrease();
+            return Switch.Prev();
         }
-        public int Next(ISwitch sw)
+        public int Go(int whereToMove)
         {
-            return sw.Next();
+            return Switch.Go(whereToMove);
         }
-        public int Prev(ISwitch sw)
+        int IBrightness.Increase()
         {
-            return sw.Prev();
+            return Brightness.Increase();
         }
-        public int Go(ISwitch sw, int whereToMove)
+        int IBrightness.Decrease()
         {
-            return sw.Go(whereToMove);
+            return Brightness.Decrease();
         }
     }
 }

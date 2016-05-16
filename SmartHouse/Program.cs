@@ -10,10 +10,9 @@ namespace SmartHouse
     {
         static void Main(string[] args)
         {
-            ConsoleMenu.Show();
-            
-
-
+            Factory factory1 = new Factory();
+            ConsoleMenu cm = new ConsoleMenu(factory1);
+            cm.Show();
 
         }
     }

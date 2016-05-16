@@ -5,34 +5,10 @@ using System.Text;
 
 namespace SmartHouse
 {
-    public class Bass : IScale
+    public class Bass : Scale
     {
-        int level;
-        //int min;
-        //int max;
-
-        public int Level
+        public Bass(int level) : base (level)
         {
-            get { return level; }
-            set
-            {
-                if (100 >= value && value >= 0)
-                {
-                    level = value;
-                }
-            }
-        }
-        public Bass(int level)
-        {
-            Level = level;
-        }
-        public int Decrease()
-        {
-            return --Level;
-        }
-        public int Increase()
-        {
-            return ++Level;
         }
     }
 }

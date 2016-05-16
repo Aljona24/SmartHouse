@@ -60,7 +60,7 @@
   <ItemGroup>
     <Compile Include="Enum\Devices.cs" />
     <Compile Include="IFactory.cs" />
-    <Compile Include="Interface2level\IScale.cs" />
+    <Compile Include="Interface2level\Scale.cs" />
     <Compile Include="Interface2level\ISwitch.cs" />
     <Compile Include="Modules\Bass.cs" />
     <Compile Include="Modules\Brightness.cs" />

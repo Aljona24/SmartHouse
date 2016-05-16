@@ -7,6 +7,7 @@ namespace SmartHouse
 {
     public abstract class SwitchableDevise
     {
+        //добавить name
         public bool OnOff { get; set; }
         public virtual bool On()
         {

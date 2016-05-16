@@ -5,31 +5,11 @@ using System.Text;
 
 namespace SmartHouse
 {
-    public class Volume : IScale
+    public class Volume : Scale
     {
-        int level;
-        public int Level
+        //name
+        public Volume(int level) : base (level)
         {
-            get { return level; }
-            set
-            {
-                if (100 >= value && value >= 0)
-                {
-                    level = value;
-                }
-            }
-        }
-        public Volume(int level)
-        {
-            Level = level;
-        }
-        public int Decrease()
-        {
-            return --Level;
-        }
-        public int Increase()
-        {
-            return ++Level;
         }
     }
 }

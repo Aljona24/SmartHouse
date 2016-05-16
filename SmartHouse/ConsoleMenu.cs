@@ -5,12 +5,22 @@ using System.Text;
 
 namespace SmartHouse
 {
-    public static class ConsoleMenu
+    public class ConsoleMenu
     {
-
-        public static void Show()
+        IFactory factory;
+        // dictonary SwitchableDevise потом добавлять сюда
+        //SwitchableDevise homeCinema1;
+        //SwitchableDevise lighting1;
+        //SwitchableDevise musicCenter1;
+        public ConsoleMenu(IFactory factory)
         {
-            
+            this.factory = factory;
+            this.homeCinema1 = factory.CreateHomeCinema();
+            this.lighting1 = factory.CreateLighting();
+            this.musicCenter1 = factory.CreateMusicCenter();
+        }        
+        public void Show()
+        {
             while (true)
             {
                 Console.Clear();
@@ -18,32 +28,17 @@ namespace SmartHouse
                 Console.WriteLine();
 
                 Console.WriteLine("Ваши девайсы:");
-
+                Console.WriteLine();
 
                 Console.WriteLine("Выберите для управление нужный девайс:");
                 
-                Console.WriteLine("HC - HomeCinema");
-                Console.WriteLine("L - Lighting");
-                Console.WriteLine("MC - MusicCenter");
 
                 Console.WriteLine("e - выйти");
                 Console.WriteLine("");
                 switch (Console.ReadLine().ToString().ToLower())
                 {
                     case "cc":
-                        ControlMenu(Devices.ClimateControl);
-                        break;
-                    case "hc":
-                        ControlMenu(Devices.HomeCinema);
-                        break;
-                    case "l":
-                        ControlMenu(Devices.Lighting);
-                        break;
-                    case "mc":
-                        ControlMenu(Devices.MusicCenter);
-                        break;
-                    case "b":
-                        ControlMenu(Devices.Buthroom);
+                        //ControlMenu();
                         break;
                     case "e":
                         return;
@@ -53,7 +48,7 @@ namespace SmartHouse
                 }
             }
         }
-        private static void ControlMenu(Devices devices)
+        private void ControlMenu(Devices devices)
         {
             while (true)
             {

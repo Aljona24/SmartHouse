@@ -7,8 +7,8 @@ namespace SmartHouse
 {
     public interface ISoundHighs
     {
-        int Increase(IScale s);
-        int Decrease(IScale s);
+        int Increase();
+        int Decrease();
 
     }
 }

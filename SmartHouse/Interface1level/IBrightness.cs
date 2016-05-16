@@ -7,6 +7,7 @@ namespace SmartHouse
 {
     public interface IBrightness
     {
+        Scale Brightness { get; set; }
         int Increase();
         int Decrease();
     }

@@ -7,7 +7,6 @@ namespace SmartHouse
 {
     public abstract class SwitchableDevise
     {
-        //добавить name
         public bool OnOff { get; set; }
         public virtual bool On()
         {
@@ -16,6 +15,10 @@ namespace SmartHouse
         public virtual bool Off()
         {
             return OnOff = false;
+        }
+        public override string ToString()
+        {
+            return OnOff ? "On": "Off";
         }
     }
 }

@@ -10,14 +10,14 @@ namespace SmartHouse
         public Scale Bass { get; set; }
         public Scale SoundHighs { get; set; }
         public Scale Volume { get; set; }
-        public ISwitch Switch { get; set; }
+        public ISwitch SelectChannel { get; set; }
 
         public MusicCenter(Scale Bass,  Scale SoundHighs, Scale Volume, ISwitch Switch)
         {
             this.Bass = Bass;
             this.SoundHighs = SoundHighs;
             this.Volume = Volume;
-            this.Switch = Switch;
+            this.SelectChannel = Switch;
         }
         int IBass.Increase()
         {
@@ -30,17 +30,37 @@ namespace SmartHouse
 
         public int Next()
         {
-            return Switch.Next();
+            return SelectChannel.Next();
         }
 
         public int Prev()
         {
-            return Switch.Prev();
+            return SelectChannel.Prev();
         }
 
         public int Go(int whereToMove)
         {
-            return Switch.Go(whereToMove);
+            return SelectChannel.Go(whereToMove);
+        }
+
+        int IVolume.Increase()
+        {
+            return Volume.Increase();
+        }
+
+        int IVolume.Decrease()
+        {
+            return Volume.Decrease();
+        }
+
+        int ISoundHighs.Increase()
+        {
+            return SoundHighs.Increase();
+        }
+
+        int ISoundHighs.Decrease()
+        {
+            return SoundHighs.Decrease();
         }
     }
 }

@@ -7,6 +7,7 @@ namespace SmartHouse
 {
     public interface ISelectChannel
     {
+        ISwitch SelectChannel { get; set; }
         int Next();
         int Prev();
         int Go(int whereToMove);

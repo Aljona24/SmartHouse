@@ -7,18 +7,18 @@ namespace SmartHouse
 {
     public class Lighting : SwitchableDevise, IBrightness
     {
-        public Scale Scale { get; set; }
+        public Scale Brightness { get; set; }
         public Lighting(Scale Scale)
         {
-            this.Scale = Scale;
+            this.Brightness = Scale;
         }
         public int Decrease()
         {
-            return Scale.Increase();
+            return Brightness.Increase();
         }
         public int Increase()
         {
-            return Scale.Decrease();
+            return Brightness.Decrease();
         }
     }
 }

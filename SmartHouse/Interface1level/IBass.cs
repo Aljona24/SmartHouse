@@ -7,6 +7,7 @@ namespace SmartHouse
 {
     public interface IBass
     {
+        Scale Bass { get; set; }
         int Increase();
         int Decrease();
 

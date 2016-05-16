@@ -7,6 +7,7 @@ namespace SmartHouse
 {
     public interface ISwitch
     {
+        int CurrentChannel { get; set; }
         int Next();
         int Prev();
         int Go(int whereToMove);

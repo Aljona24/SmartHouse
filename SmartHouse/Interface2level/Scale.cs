@@ -8,8 +8,7 @@ namespace SmartHouse
     public abstract class Scale
     {
         int level;
-        //int min; readonly+ конструктор
-        //int max;
+        //int max; readonly+ конструктор
 
         public int Level
         {
@@ -34,6 +33,10 @@ namespace SmartHouse
         public int Increase()
         {
             return ++Level;
+        }
+        public override string ToString()
+        {
+            return "Level " + Level;
         }
     }
 }

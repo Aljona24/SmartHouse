@@ -5,12 +5,10 @@ using System.Text;
 
 namespace SmartHouse
 {
-    enum Devices
+    public enum Devices
     {
-        ClimateControl,
         HomeCinema,
         Lighting,
-        MusicCenter,
-        Buthroom
+        MusicCenter
     }
 }

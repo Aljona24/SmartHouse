@@ -7,6 +7,7 @@ namespace SmartHouse
 {
     public interface IVolume
     {
+        Scale Volume { get; set; }
         int Increase();
         int Decrease();
     }

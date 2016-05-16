@@ -7,6 +7,10 @@ namespace SmartHouse
 {
     public class SelectChannel : ISwitch
     {
+        public SelectChannel(int currentChannel)
+        {
+            CurrentChannel = currentChannel;
+        }
         public int CurrentChannel { get; set; }
         Dictionary<int, string> channelsDb = new Dictionary<int, string>
         {
@@ -41,6 +45,10 @@ namespace SmartHouse
         {
             CurrentChannel = whereToMove;
             return CurrentChannel;
+        }
+        public override string ToString()
+        {
+            return channelsDb[CurrentChannel];
         }
     }
 }

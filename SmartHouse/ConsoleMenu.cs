@@ -43,7 +43,7 @@ namespace SmartHouse
                 {
                     case "edit":
                         SwitchableDevise controlledDvise = SwitchableDevisesDB[comands[1]];
-                        ControlMenu(controlledDvise, comands[1]);
+                        ControlMenu(controlledDvise, comands[1]);    
                         break;
                     case "add":
                         Devices d;
@@ -63,10 +63,7 @@ namespace SmartHouse
                         break;
                 }
             }
-        }
-
-        
-
+        }    
         private void ControlMenu(SwitchableDevise controlledDvise, string name)
         {            
             while (true)

@@ -7,26 +7,28 @@ namespace SmartHouse
 {
     public class Factory : IFactory
     {
-        public virtual SwitchableDevise Create(Devices device)
+        public SwitchableDevise CreateHomeCinema(int levelBass, int levelBrightness, int levelSelectChannel, int levelSoundHighs, int levelVolume)
         {
-            Bass bass = new Bass(10);
-            Brightness brightness = new Brightness(20);
-            SelectChannel selectChannel = new SelectChannel(1);
-            SoundHighs soundHighs = new SoundHighs(12);
-            Volume volume = new Volume(10);            
-            switch (device)
-            {
-                case Devices.HomeCinema:
-                    
-                    return new HomeCinema(bass, brightness, soundHighs, volume, selectChannel);                    
-                case Devices.Lighting:
-                    return new Lighting(brightness);
-                case Devices.MusicCenter:
-                    return new MusicCenter(bass, soundHighs, volume, selectChannel);
-                default:
-                    return null;
-            }
-            
+            Bass bass = new Bass(levelBass);
+            Brightness brightness = new Brightness(levelBrightness);
+            SelectChannel selectChannel = new SelectChannel(levelSelectChannel);
+            SoundHighs soundHighs = new SoundHighs(levelSoundHighs);
+            Volume volume = new Volume(levelVolume);
+            return new HomeCinema(bass, brightness, soundHighs, volume, selectChannel);
+        }
+        public SwitchableDevise CreateLighting(int levelBrightness)
+        {
+            Brightness brightness = new Brightness(levelBrightness);
+            return new Lighting(brightness);
+
+        }
+        public SwitchableDevise CreateMusicCenter(int levelBass, int levelSelectChannel, int levelSoundHighs, int levelVolume)
+        {
+            Bass bass = new Bass(levelBass);
+            SelectChannel selectChannel = new SelectChannel(levelSelectChannel);
+            SoundHighs soundHighs = new SoundHighs(levelSoundHighs);
+            Volume volume = new Volume(levelVolume);
+            return new MusicCenter(bass, soundHighs, volume, selectChannel);
         }
     }
 }

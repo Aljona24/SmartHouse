@@ -6,21 +6,22 @@ using System.Text;
 namespace SmartHouse
 {
     public class HomeCinema : SwitchableDevise, IBrightness, IVolume, IBass, ISoundHighs, ISelectChannel
-    {
-        public Scale Bass { get; set; }
+    {        
+        public HomeCinema(Scale bass, Scale brightness, Scale soundHighs, Scale volume, ISwitch _switch) // С маленькоф буквы параметры и без зис!
+        {
+            Bass = bass;
+            Brightness = brightness;
+            SoundHighs = soundHighs;
+            Volume = volume;
+            SelectChannel = _switch;
+        }
+
+        public Scale Bass { get; set; } //orders после конструктора
         public Scale Brightness { get; set; }
         public Scale SoundHighs { get; set; }
         public Scale Volume { get; set; }
         public ISwitch SelectChannel { get; set; }
-       
-        public HomeCinema(Scale Bass, Scale Brightness, Scale SoundHighs, Scale Volume, ISwitch Switch)
-        {
-            this.Bass = Bass;
-            this.Brightness = Brightness;
-            this.SoundHighs = SoundHighs;
-            this.Volume = Volume;
-            this.SelectChannel = Switch;
-        }     
+
         public int Next()
         {
             return SelectChannel.Next();
@@ -61,7 +62,6 @@ namespace SmartHouse
         {
             return Bass.Decrease();
         }
-
         int ISoundHighs.Increase()
         {
             return SoundHighs.Increase();

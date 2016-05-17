@@ -11,9 +11,9 @@ namespace SmartHouse
         Dictionary<string, SwitchableDevise> SwitchableDevisesDB = new Dictionary<string, SwitchableDevise>();
         public ConsoleMenu(IFactory factory)
         {
-            SwitchableDevisesDB.Add("homeCinema1", factory.Create(Devices.HomeCinema));
-            SwitchableDevisesDB.Add("lighting1", factory.Create(Devices.Lighting));
-            SwitchableDevisesDB.Add("musicCenter1", factory.Create(Devices.MusicCenter));
+            SwitchableDevisesDB.Add("hc1", factory.CreateHomeCinema(20,20,1,20,20));
+            SwitchableDevisesDB.Add("l1", factory.CreateLighting(50));
+            SwitchableDevisesDB.Add("mCr1", factory.CreateMusicCenter(20,1,30,30));
             this.factory = factory;
         }        
         public void Show()
@@ -45,11 +45,19 @@ namespace SmartHouse
                         SwitchableDevise controlledDvise = SwitchableDevisesDB[comands[1]];
                         ControlMenu(controlledDvise, comands[1]);    
                         break;
-                    case "add":
-                        Devices d;
-                        if(Enum.TryParse<Devices>(comands[1], out d))
+                    case "add":                        
+                        if(comands[1].ToString().ToLower() == "musiccenter")
                         {
-                            SwitchableDevisesDB.Add(comands[2], factory.Create(d));
+                            SwitchableDevisesDB.Add(comands[2], factory.CreateMusicCenter());                            
+                        }
+                        else if(comands[1].ToString().ToLower() == "homecinema")
+                        {
+                            SwitchableDevisesDB.Add(comands[2], factory.CreateHomeCinema());
+                            factory.CreateLighting();
+                        }
+                        else if (comands[1].ToString().ToLower() == "lighting")
+                        {
+                            SwitchableDevisesDB.Add(comands[2], factory.CreateLighting());
                         }
                         else
                         {

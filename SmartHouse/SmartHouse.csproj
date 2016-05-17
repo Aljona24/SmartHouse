@@ -58,7 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enum\Devices.cs" />
+    <Compile Include="Enum\Channels.cs" />
     <Compile Include="IFactory.cs" />
     <Compile Include="Interface2level\Scale.cs" />
     <Compile Include="Interface2level\ISwitch.cs" />

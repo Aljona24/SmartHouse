@@ -1,148 +1,155 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+<ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="SmartHouse.ConsoleMenu">
-    <Position X="8.25" Y="0.5" Width="2.5" />
+    <Position X="3.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAQAEAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAQIEAAEAAAAAAAABAAA=</HashCode>
       <FileName>ConsoleMenu.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SmartHouse.HomeCinema">
-    <Position X="2.25" Y="3" Width="1.75" />
+    <Position X="0.5" Y="9" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AgEAAAAAAAAAAIAAAIAAgAAAEAAAAEAAAAIAAAAAAIA=</HashCode>
+      <HashCode>AgEAAAAgIAAAAAACAIAAgAIAFAAAAEAAAAIAIAAAAoA=</HashCode>
       <FileName>Devices\HomeCinema.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="SmartHouse.Lighting">
-    <Position X="4.5" Y="3" Width="1.5" />
+    <Position X="2.75" Y="9" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAEAAAAAABAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAEAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
       <FileName>Devices\Lighting.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="SmartHouse.MusicCenter">
-    <Position X="6.75" Y="3" Width="1.75" />
+    <Position X="5" Y="9" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AgEAEAAAAAABAIAAAIAAAAAAEAAAAEAAAAIAAAAAAAA=</HashCode>
+      <HashCode>AgEAAAAgIAAAAAACAIAAAAIAFAAAAEAAAAIAIAAAAgA=</HashCode>
       <FileName>Devices\MusicCenter.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="SmartHouse.Factory" BaseTypeListCollapsed="true">
-    <Position X="8.75" Y="3.75" Width="3" />
+    <Position X="6.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAABBAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
       <FileName>Factory.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="SmartHouse.Bass" BaseTypeListCollapsed="true">
-    <Position X="0.5" Y="7.25" Width="1.5" />
+  <Class Name="SmartHouse.Scale">
+    <Position X="3.75" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAABAAAEAAAAAAAAAAEAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Interface2level\Scale.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartHouse.Bass">
+    <Position X="5" Y="17.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Modules\Bass.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SmartHouse.Brightness" BaseTypeListCollapsed="true">
-    <Position X="5.75" Y="7.25" Width="1.5" />
+  <Class Name="SmartHouse.Brightness">
+    <Position X="7.25" Y="17.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Modules\Brightness.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SmartHouse.SelectChannel" BaseTypeListCollapsed="true">
-    <Position X="7.5" Y="7.25" Width="2.75" />
+    <Position X="9.5" Y="16.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AgAAAAAAAAAAAAABAAAAAAAAEAAAAEAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AgAAAAAAAAAAAAAFAAAAAAAAEAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>Modules\SelectChannel.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
+    <Lollipop Position="0.2" />
   </Class>
-  <Class Name="SmartHouse.SoundHighs" BaseTypeListCollapsed="true">
-    <Position X="2.25" Y="7.25" Width="1.5" />
+  <Class Name="SmartHouse.SoundHighs">
+    <Position X="0.5" Y="17.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Modules\SoundHighs.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SmartHouse.Volume" BaseTypeListCollapsed="true">
-    <Position X="4" Y="7.25" Width="1.5" />
+  <Class Name="SmartHouse.Volume">
+    <Position X="2.75" Y="17.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Modules\Volume.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SmartHouse.Program">
-    <Position X="11" Y="1.5" Width="1.5" />
+    <Position X="10.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SmartHouse.SwitchableDevise">
-    <Position X="4.5" Y="0.5" Width="1.5" />
+    <Position X="2.75" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAIAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <HashCode>AAAAAIAAAAAAAAgEAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
       <FileName>SwitchableDevise.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="SmartHouse.IBass" Collapsed="true">
-    <Position X="14.25" Y="5.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAEAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interface1level\IBass.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="SmartHouse.IBrightness" Collapsed="true">
-    <Position X="16" Y="4.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAEAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interface1level\IBrightness.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="SmartHouse.ISelectChannel" Collapsed="true">
-    <Position X="12.5" Y="4.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interface1level\ISelectChannel.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="SmartHouse.ISoundHighs" Collapsed="true">
-    <Position X="14.25" Y="4.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAEAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interface1level\ISoundHighs.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="SmartHouse.IVolume" Collapsed="true">
-    <Position X="12.5" Y="5.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAEAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interface1level\IVolume.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
   <Interface Name="SmartHouse.IFactory">
-    <Position X="15" Y="0.5" Width="1.5" />
+    <Position X="8.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAABBAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
       <FileName>IFactory.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="SmartHouse.ISwitch" Collapsed="true">
-    <Position X="13.5" Y="6.75" Width="1.5" />
+  <Interface Name="SmartHouse.IBass">
+    <Position X="0.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAEAEAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface1level\IBass.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartHouse.IBrightness">
+    <Position X="2.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Interface1level\IBrightness.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartHouse.ISelectChannel">
+    <Position X="5.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAIAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface1level\ISelectChannel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartHouse.ISoundHighs">
+    <Position X="4" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface1level\ISoundHighs.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartHouse.IVolume">
+    <Position X="7.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAABAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Interface1level\IVolume.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartHouse.ISwitch">
+    <Position X="9.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAABAAAAAAAAEAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>Interface2level\ISwitch.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Enum Name="SmartHouse.Devices" Collapsed="true">
-    <Position X="13" Y="1.5" Width="1.5" />
+  <Enum Name="SmartHouse.Enum.Channels" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAQAAAAAAAACAAAAAQAAAAAAAAAAAAAAEAAAAgAAAA=</HashCode>
-      <FileName>Enum\Devices.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enum\Channels.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

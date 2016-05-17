@@ -18,7 +18,7 @@ namespace SmartHouse
         }
         public override string ToString()
         {
-            return OnOff ? "On": "Off";
+            return OnOff ? "On" : "Off";
         }
     }
 }

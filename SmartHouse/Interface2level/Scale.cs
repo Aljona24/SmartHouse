@@ -7,9 +7,10 @@ namespace SmartHouse
 {
     public abstract class Scale
     {
-        int level;
+        private int level;//явно приват
         //int max; readonly+ конструктор
-
+        //енум устройство и оставить его одного , каррент, мин, мах, стэп
+        // buss volume убираются 
         public int Level
         {
             get { return level; }

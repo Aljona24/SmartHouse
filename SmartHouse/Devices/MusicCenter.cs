@@ -7,18 +7,19 @@ namespace SmartHouse
 {
     public class MusicCenter : SwitchableDevise, IBass, IVolume, ISoundHighs, ISelectChannel
     {
+        public MusicCenter(Scale bass,  Scale soundHighs, Scale volume, ISwitch _switch)
+        {
+            Bass = bass;
+            SoundHighs = soundHighs;
+            Volume = volume;
+            SelectChannel = _switch;
+        }
+
         public Scale Bass { get; set; }
         public Scale SoundHighs { get; set; }
         public Scale Volume { get; set; }
         public ISwitch SelectChannel { get; set; }
 
-        public MusicCenter(Scale Bass,  Scale SoundHighs, Scale Volume, ISwitch Switch)
-        {
-            this.Bass = Bass;
-            this.SoundHighs = SoundHighs;
-            this.Volume = Volume;
-            this.SelectChannel = Switch;
-        }
         int IBass.Increase()
         {
             return Bass.Increase();
